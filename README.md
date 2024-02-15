@@ -4,7 +4,7 @@
 testable. It is also built with a buildless approach, meaning that it does not require a build step to use it. It is
 also designed to be used with any framework or library, such as React, Angular, or Vue.
 
-Storybook url: [Not yet published](#)
+Storybook url: [@gyeongho/gyeongho-web-components](https://65cde0fff0f2ea377d4a23dc-kqpzvjwzpu.chromatic.com/)
 
 ## Table of Contents
 
