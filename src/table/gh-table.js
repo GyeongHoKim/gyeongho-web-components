@@ -2,6 +2,12 @@ import BaseComponent from '../base.js';
 import {css, html} from 'lit';
 
 export default class GHTable extends BaseComponent {
+  constructor() {
+    super();
+    this.multiSelect = false;
+    this.zebra = true;
+  }
+
   static get properties() {
     return {
       multiSelect: {type: Boolean, reflect: true},
