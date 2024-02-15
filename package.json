@@ -22,7 +22,8 @@
     "test:prod": "MODE=prod wtr",
     "test:prod:watch": "MODE=prod wtr --watch",
     "storybook": "storybook dev -p 6006",
-    "build-storybook": "storybook build"
+    "build-storybook": "storybook build",
+    "chromatic": "npx chromatic --project-token=chpt_3719cdca264a3e3"
   },
   "keywords": [
     "web-components",
@@ -30,7 +31,9 @@
     "javascript",
     "lit"
   ],
-  "author": "GyeongHo Kim",
+  "author": {
+    "name": "GyeongHo Kim"
+  },
   "license": "BSD-3-Clause",
   "dependencies": {
     "@lit/context": "^1.1.0",
@@ -53,6 +56,7 @@
     "@web/test-runner": "^0.15.0",
     "@web/test-runner-playwright": "^0.9.0",
     "@webcomponents/webcomponentsjs": "^2.8.0",
+    "chromatic": "^10.9.5",
     "eslint": "^8.15.0",
     "eslint-plugin-storybook": "^0.6.15",
     "lit-analyzer": "^1.2.1",
