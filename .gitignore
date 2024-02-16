@@ -1,6 +1,7 @@
 /node_modules/
 .DS_Store
 index.html
+index.css
 app.js
 build-storybook.log
 custom-elements.json
