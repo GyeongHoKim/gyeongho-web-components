@@ -10,8 +10,6 @@ on:
 # List of jobs
 jobs:
   chromatic-deployment:
-    # merged pull request
-    if: ${{ github.event.pull_request.merged }}
     # Operating System
     runs-on: ubuntu-latest
     # Job steps
