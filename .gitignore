@@ -3,5 +3,7 @@
 index.html
 index.css
 app.js
+.npmrc
 build-storybook.log
+dist/
 custom-elements.json

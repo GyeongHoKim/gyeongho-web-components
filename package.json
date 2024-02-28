@@ -1,16 +1,23 @@
 {
   "name": "@gyeongho/gyeongho-web-components",
-  "private": true,
+  "private": false,
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/GyeongHoKim/gyeongho-web-components.git"
+  },
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/"
+  },
   "version": "0.0.1",
   "description": "Reusable web components for building web sites",
   "main": "dist/index.js",
   "module": "dist/index.js",
   "type": "module",
   "scripts": {
-    "build": "echo \"gulp task not implemented\"",
+    "build": "rollup -c",
     "lint": "npm run lint:lit-analyzer && npm run lint:eslint",
-    "lint:eslint": "eslint '**/*.js'",
-    "lint:lit-analyzer": "lit-analyzer index.js",
+    "lint:eslint": "eslint 'src/**/*.js'",
+    "lint:lit-analyzer": "lit-analyzer src/index.js",
     "format": "prettier \"**/*.{cjs,html,js,json,md,ts}\" --ignore-path ./.eslintignore --write",
     "analyze": "cem analyze --litelement --globs \"**/*.js\" --exclude docs",
     "analyze:watch": "cem analyze --litelement --globs \"**/*.js\" --exclude docs --watch",
@@ -51,6 +58,7 @@
     "@storybook/blocks": "^7.6.15",
     "@storybook/web-components": "^7.6.15",
     "@storybook/web-components-vite": "^7.6.15",
+    "@typescript-eslint/eslint-plugin": "^7.1.0",
     "@web/dev-server": "^0.1.31",
     "@web/dev-server-legacy": "^1.0.0",
     "@web/test-runner": "^0.15.0",
@@ -59,7 +67,7 @@
     "chromatic": "^10.9.5",
     "eslint": "^8.15.0",
     "eslint-plugin-storybook": "^0.6.15",
-    "lit-analyzer": "^1.2.1",
+    "lit-analyzer": "^2.0.3",
     "prettier": "^2.6.2",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
