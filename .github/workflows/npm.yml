@@ -11,7 +11,7 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       - run: npm i
-      - run: npm lint
-      - run: npm build
+      - run: npm run lint
+      - run: npm run build
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_KEY }}
